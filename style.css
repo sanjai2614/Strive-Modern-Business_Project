@@ -1,0 +1,3052 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #ea7c00;
+    --secondary-color: #ffffff;
+    --para-color: #444444;
+
+}
+
+p {
+    line-height: 25px;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://bootstrapmade.com/content/demo/Strive/assets/img/slider/slider-16.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    padding: 20px;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    border-bottom: 1px solid #534f4f;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+nav li {
+    list-style: none;
+    transition: all 0.3s;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+li {
+    list-style: none;
+}
+
+ol {
+    display: flex;
+    gap: 30px;
+}
+
+i {
+    color: var(--primary-color);
+}
+
+.drop,
+.deep {
+    display: none;
+}
+
+.drop-down:hover .drop {
+    transition: all 0.2s ease-in-out;
+
+    position: absolute;
+    display: block;
+    z-index: 9;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.deep-down:hover .deep {
+    transition: all 0.2s ease-in-out;
+    left: -85%;
+    top: 20%;
+    position: absolute;
+    display: block;
+    z-index: 10;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+.drop-down i {
+    color: var(--secondary-color);
+}
+
+.drop-down:hover i {
+    color: var(--primary-color);
+}
+
+.nav-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 30px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #d17409f1;
+    }
+}
+
+.nav-btn1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: large;
+    font-weight: 500;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: rgb(41, 40, 40);
+        color: var(--primary-color);
+    }
+}
+
+.head {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 30px;
+
+}
+
+.head p {
+    color: #c9c6c6;
+    font-size: 17px;
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 56px;
+    text-align: center;
+}
+
+.head hr {
+    width: 100px;
+    background-color: var(--primary-color);
+    border: none;
+    height: 5px;
+}
+
+.about {
+    padding: 50px 100px;
+
+}
+
+.about p {
+    color: var(--para-color);
+}
+
+.bl-abt {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
+
+.bl-abt p {
+    color: var(--para-color);
+    font-weight: light;
+}
+
+.exp-img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/about/about-portrait-2.webp) center;
+    background-size: cover;
+    width: 80%;
+    height: auto;
+    margin: 0px 50px 20px 100px;
+    border-radius: 20px;
+}
+
+.bl-abt h1 {
+    font-size: 56px;
+    line-height: 60px;
+}
+
+.bl-abt2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 100px;
+}
+
+.abt-2p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.abt-2p i {
+    color: var(--primary-color);
+    font-size: larger;
+    width: 55px;
+    background-color: #fcecd9;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.abt-2p p {
+    color: var(--para-color);
+}
+
+.near-i {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.abt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.learn {
+    background-color: var(--primary-color);
+    width: fit-content;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.absol-1 {
+    position: absolute;
+    left: 34%;
+    top: 10%;
+    background-color: var(--primary-color);
+    padding: 10px 30px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.absol-1 span {
+    font-size: 30px;
+
+
+}
+
+.absol-2 {
+    position: absolute;
+    left: 100px;
+    bottom: -3%;
+    background-color: var(--secondary-color);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    gap: 4px;
+    font-weight: bold;
+}
+
+.absol-2 span {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primary-color);
+
+}
+
+.services {
+    padding: 50px 100px;
+
+}
+
+.services p {
+    color: var(--para-color);
+}
+
+.profess {
+    padding: 20px 100px 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.profess-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profess-1 h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.profess-1 h2 {
+    background-color: #fcecd9;
+    color: var(--primary-color);
+    width: fit-content;
+    padding: 10px;
+    font-size: small;
+    border-radius: 10px;
+}
+
+.profess-1 button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    width: fit-content;
+    font-weight: bold;
+    font-size: large;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #d17409f1;
+    }
+}
+
+.profess-1 button i {
+    color: var(--secondary-color);
+}
+
+.profess-2 {
+
+    flex: 1;
+    background: url("https://bootstrapmade.com/content/demo/Strive/assets/img/services/services-9.webp") center no-repeat;
+    width: 90%;
+    background-size: cover;
+}
+
+.profess-2 img {
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+}
+
+.para-3 {
+    padding: 50px 100px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.para-3 div {
+    flex: 1;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s linear;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-direction: normal;
+    overflow: hidden;
+
+
+
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+
+    }
+}
+
+
+.p2 {
+    display: none;
+
+
+}
+
+.para-3 div:hover .p2 {
+    transition: all 0.3s linear;
+    display: block;
+
+}
+
+.para-3 div:hover .p1 {
+    transition: all 0.3s linear;
+    display: none;
+}
+
+.para-3 div:hover i {
+    transition: all 0.3s linear;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.para-3 p {
+    font-size: 16px;
+}
+
+.para-3 i {
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 100%;
+    padding: 20px;
+    width: fit-content;
+}
+
+.black {
+    background-color: black;
+    color: var(--secondary-color);
+    display: flex;
+    padding: 100px;
+    gap: 100px
+}
+
+.black-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.black-1 p {
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.black-1 h1 {
+    font-size: 40px;
+}
+
+.black-1 h3 {
+    background-color: #ce764e;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: small;
+}
+
+.black-1 i {
+    color: var(--secondary-color);
+}
+
+.black-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.black-2 i {
+    color: rgb(10, 175, 10);
+
+}
+
+.black-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.black-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.color-btn {
+    background-color: #ce764e;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px 30px;
+    transition: all 0.3s linear;
+    font-weight: bold;
+    font-size: 17px;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.grey-btn {
+    background-color: #252525;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid grey;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transform: translateY(-2px);
+        background-color: var(--primary-color);
+        border: none;
+
+    }
+}
+
+.trust {
+    color: var(--para-color);
+    font-size: 14px;
+}
+
+.five-star {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.five-star i {
+    font-size: small;
+    color: gold;
+}
+
+.power {
+    display: flex;
+    padding: 100px;
+    gap: 50px;
+}
+
+.power-1 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.power-1 h1 {
+    font-size: 40px;
+}
+
+.power-1 p {
+    color: var(--para-color);
+    font-weight: lighter;
+}
+
+.power-1>div {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #fcf1e5;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(230, 225, 225);
+
+}
+
+.power-1 i {
+    background-color: #d86d2b;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    font-size: 40px;
+    box-shadow: 0 0 5px #d86d2b;
+}
+
+.power-1 button {
+    background-color: #d86d2b;
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 10px #d86d2b;
+
+    }
+}
+
+.power-2 {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-direction: column; */
+
+}
+
+.power-2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border: 1px solid #fcf1e5;
+    border-radius: 20px;
+    width: 48%;
+    padding: 20px;
+
+
+}
+
+.power-2 div:hover {
+
+    box-shadow: 0 0 10px rgb(230, 225, 225);
+
+}
+
+.power-2 div:hover i {
+    background-color: #d86d2b;
+    color: var(--secondary-color);
+    transform: scale(1.1);
+
+
+}
+
+.power-2 i {
+    background-color: #fcecd9;
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: fit-content;
+    font-size: 30px;
+}
+
+.power-2 p {
+    color: var(--para-color);
+}
+
+.logos {
+    background-color: #f5f2ef;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 100px;
+
+}
+
+.logos img {
+    width: 100px;
+}
+
+.portfolio {
+    padding: 50px 100px;
+}
+
+.portfolio-1 {
+    padding: 10px 100px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.portfolio-btn button {
+    background-color: #fcecd9;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+
+
+}
+
+.portfolio-btn :first-child {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.portfolio-flex {
+    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+
+
+
+}
+
+.portfolio-img1 {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-1.webp) no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.portfolio-img2 {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-2.webp) no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.portfolio-img3 {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-3.webp) no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.portfolio-img4 {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-4.webp) no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.portfolio-img5 {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-5.webp) no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.portfolio-img6 {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-6.webp) no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.portfolio-61,
+.portfolio-62,
+.portfolio-63,
+.portfolio-64,
+.portfolio-65,
+.portfolio-66 {
+    border: 1px solid #fcf1e5;
+    border-radius: 10px;
+    width: 32%;
+    height: auto;
+    transition: all 0.1s linear;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 10px 10px 20px rgb(230, 225, 225);
+
+    }
+}
+
+.portfolio-61:hover .portfolio-img1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-1.webp) no-repeat center;
+    background-size: cover;
+}
+
+.portfolio-62:hover .portfolio-img2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-2.webp) no-repeat center;
+    background-size: cover;
+}
+
+.portfolio-63:hover .portfolio-img3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-3.webp) no-repeat center;
+    background-size: cover;
+}
+
+.portfolio-64:hover .portfolio-img4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-4.webp) no-repeat center;
+    background-size: cover;
+}
+
+.portfolio-65:hover .portfolio-img5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-5.webp) no-repeat center;
+    background-size: cover;
+}
+
+.portfolio-66:hover .portfolio-img6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url(https://bootstrapmade.com/content/demo/Strive/assets/img/portfolio/portfolio-6.webp) no-repeat center;
+    background-size: cover;
+}
+
+.portfolio-img1+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portfolio-img2+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portfolio-img3+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portfolio-img4+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portfolio-img5+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portfolio-img6+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portfolio-flex p {
+    color: var(--para-color);
+    font-size: 14px;
+}
+
+.portfolio-flex button {
+    background-color: #fcecd9;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.portfolio-div-btn {
+    display: flex;
+    gap: 2%;
+}
+
+.case-btn {
+    text-align: center;
+
+}
+
+.case-btn button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pricing {
+    padding: 50px 100px;
+    background-color: #f5f2ef;
+}
+
+.pricing p {
+    color: var(--para-color);
+
+}
+
+.offers {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* gap: 20px; */
+    /* flex-wrap: wrap; */
+    /* width: 25%; */
+}
+
+.standard {
+    border: 1px solid #fcecd9;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.standard,
+.professional {
+    width: 32%;
+}
+
+.absolute {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+    top: 5%;
+    left: 44%;
+
+}
+
+.professional {
+    border: 1px solid var(--primary-color);
+    background-color: #faf7f5;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.standard ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--para-color);
+}
+
+.professional ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--para-color);
+}
+
+.offer-icons {
+    align-self: center;
+    background-color: #fcf1e5;
+    padding: 20px;
+    width: fit-content;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.pricing button {
+    background-color: #fcecd9;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.professional button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.standard span {
+    font-size: 16px;
+    font-weight: lighter;
+    color: var(--para-color);
+}
+
+.professional span {
+    font-size: 16px;
+    font-weight: lighter;
+    color: var(--para-color);
+}
+
+.general {
+    padding: 50px 200px;
+}
+
+.general-btns {
+    display: flex;
+    gap: 30px;
+    background-color: #f5f5f5;
+    width: fit-content;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+
+}
+
+.general-btns button {
+    border: none;
+    font-size: 16px
+}
+
+.questions {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.questions>p {
+    box-shadow: 10px 10px 20px #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: #fcecd9;
+    }
+}
+
+.still {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    background-color: #fcecd9;
+    border-radius: 10px;
+}
+
+.still button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.team {
+    background-color: #f5f2ef;
+    padding: 50px 100px;
+}
+
+.team-1 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: space-between;
+    padding: 50px 0px;
+
+
+}
+
+.team-1 p {
+    font-size: 14px;
+    color: var(--para-color);
+}
+
+.team-1 h5 {
+    color: var(--primary-color);
+}
+
+.team-11 {
+    width: 23%;
+
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+}
+
+.team-11 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.team-11img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-m-8.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.team-12img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-f-12.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.team-13img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-m-3.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.team-14img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-f-7.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.team-15img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-m-11.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.team-16img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-f-4.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.team-17img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-m-14.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.team-18img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-f-9.webp) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #fcecd9;
+
+}
+
+.recent {
+    padding: 50px 100px;
+
+}
+
+.recent2div {
+    display: flex;
+    /* flex:1 1; */
+    width: 100%;
+    gap: 20px;
+
+}
+
+.recent-1 {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 70%;
+}
+
+.recent-11img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/blog/blog-post-7.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.recent-12img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/blog/blog-post-3.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.recent-11img button {
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.recent-center button {
+    background-color: #fcecd9;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+}
+
+.recent-11 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 0 0 10px #c9c6c6;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 20px #c9c6c6;
+    }
+
+}
+
+.recent-11:hover h1 {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.recent-center,
+.recent-text,
+.recent-last {
+    padding: 0px 40px;
+}
+
+.recent-last {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.recent-last button {
+    background: none;
+    color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+}
+
+.recent-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-center span {
+    color: var(--para-color);
+    font-size: small;
+
+}
+
+.recent-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recent-text p {
+    color: var(--para-color);
+}
+
+.smallimg {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-m-8.webp) no-repeat center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.smallimg2 {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/person/person-f-7.webp) no-repeat center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.recent-11last-1 {
+    display: flex;
+    gap: 5%;
+    width: 200px;
+    align-items: flex-end;
+}
+
+.recent-11last-1 p {
+
+    color: var(--para-color);
+    font-size: smaller;
+}
+
+.recent-2 {
+    width: 35%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.recent-22 {
+    border: 1px solid #f5f2ef;
+    border-radius: 20px;
+
+    &:hover {
+        border: 1px solid #ffc078;
+    }
+
+}
+
+.recent-221img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/blog/blog-post-5.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.recent-222img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/blog/blog-post-9.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.recent-223img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/blog/blog-post-6.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.recent-224img {
+    background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/blog/blog-post-8.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.recent-22-last {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.recent-last-22 {
+    display: flex;
+    gap: 10px;
+}
+
+.recent-last-22 span {
+    font-size: 12px;
+    color: var(--para-color);
+}
+
+.recent-22-last button {
+    background-color: #fcf1e5;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: bolder;
+    font-size: 12px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+}
+
+.recent-22-last p {
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+
+}
+
+.recent-22:hover .recent-22-last p {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.contact {
+    background-color: #f5f2ef;
+    padding: 50px 100px;
+}
+
+.contact-div {
+    padding: 20px 0px;
+    display: grid;
+    grid-template-areas: "item1 item2 item3"
+        "item1  item4 item5"
+        "item1  item6 item6"
+        "item1  item6 item6"
+        "item1  item6 item6";
+    row-gap: 20px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+#a1 {
+    grid-area: item1;
+    width: 100%;
+    height: 100%;
+
+}
+
+#a2 {
+    grid-area: item2;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#a3 {
+    grid-area: item3;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#a4 {
+    grid-area: item4;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#a5 {
+    grid-area: item5;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#a6 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-area: item6;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+
+}
+
+.contact-div div {
+    border: none;
+    border-radius: 10px;
+
+}
+
+#a2 p {
+    font-size: 14px;
+}
+
+#a3 p {
+    font-size: 14px;
+}
+
+#a4 p {
+    font-size: 14px;
+}
+
+#a5 p {
+    font-size: 14px;
+}
+
+.contact-icons {
+    background-color: #fcf1e5;
+    padding: 10px;
+    height: fit-content;
+    font-size: 20px;
+
+}
+
+#a1 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "name email"
+        "subject subject"
+        "textarea textarea"
+        "submit icons";
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    row-gap: 20px;
+}
+
+#a6 h2 {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+#name {
+    grid-area: name;
+}
+
+#email {
+    grid-area: email;
+}
+
+#subject {
+    grid-area: subject;
+}
+
+#textarea {
+    grid-area: textarea;
+}
+
+#submit {
+    grid-area: submit;
+}
+
+#icons {
+    grid-area: icons;
+    padding-left: 60%;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: #f5f4f3;
+    border-radius: 10px;
+    outline: none;
+
+
+
+    &:focus {
+        border: 1px solid var(--primary-color);
+        background-color: white;
+    }
+}
+
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: #f5f4f3;
+    border-radius: 10px;
+
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--primary-color);
+        background-color: white;
+    }
+}
+
+form button {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transform: translateY(-2px);
+        background-color: #d86d2b;
+    }
+}
+
+.span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    color: var(--secondary-color);
+    padding: 50px 100px;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer ol {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ol li {
+    display: flex;
+    gap: 10px;
+}
+
+.ft-icons {
+    background-color: #1c1105;
+    padding: 10px;
+    border-radius: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+.footer-1 {
+    width: 33%;
+}
+
+.footer-1 p {
+    font-weight: lighter;
+}
+
+.footer-1 form {
+    display: flex;
+    gap: 0px;
+}
+
+.footer-1 input {
+    background-color: #252525;
+    outline: none;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    box-shadow: 10 10 20px var(--secondary-color);
+
+    &:focus {
+        outline: none;
+        border: none;
+        color: wheat;
+    }
+}
+
+.footer-1 button {
+
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #c9c6c6;
+
+    &:hover {
+        transform: none;
+    }
+
+}
+
+.footer-1 i {
+    color: var(--secondary-color);
+}
+
+.footer-1>p {
+    font-size: 16px;
+}
+
+.footer ul {
+    font-size: 14px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+.footer ul li:hover {
+    transition: all 0.2s linear;
+    color: var(--primary-color);
+    transform: translateX(3px);
+    cursor: pointer;
+}
+
+.footer ol {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.footer ul i {
+    font-size: 8px;
+}
+
+.footer-2 {
+    width: 20%;
+}
+
+.last-icons i {
+    color: #c9c6c6;
+    background-color: #252525;
+    border-radius: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+}
+
+footer {
+    background-color: #252525;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+footer span {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* For Device Supported Width: 992px - 1199px */
+
+@media (min-width:992px) and (max-width:1199px) {
+    .about {
+        padding: 50px 50px;
+
+    }
+
+    .about p {
+        color: var(--para-color);
+    }
+
+    .bl-abt {
+        width: 100%;
+        display: flex;
+        padding: 100px 0px;
+        position: relative;
+
+    }
+
+    .bl-abt p {
+        color: var(--para-color);
+        font-weight: light;
+    }
+
+    .exp-img {
+        background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/about/about-portrait-2.webp) center;
+        background-size: cover;
+        width: 80%;
+        height: auto;
+        margin: 0px 50px 20px 50px;
+        border-radius: 20px;
+    }
+
+    .bl-abt h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .bl-abt2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .abt-2p {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .abt-2p i {
+        color: var(--primary-color);
+        font-size: larger;
+        width: 55px;
+        background-color: #fcecd9;
+        border-radius: 100%;
+        padding: 15px;
+    }
+
+    .abt-2p p {
+        color: var(--para-color);
+    }
+
+    .near-i {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .abt-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .learn {
+        background-color: var(--primary-color);
+        width: fit-content;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+    }
+
+    .absol-1 {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        background-color: var(--primary-color);
+        padding: 10px 30px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .absol-1 span {
+        font-size: 30px;
+
+
+    }
+
+    .absol-2 {
+        position: absolute;
+        left: 100px;
+        bottom: 5%;
+        background-color: var(--secondary-color);
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        box-shadow: 0 0 10px gray;
+        border-radius: 10px;
+        gap: 4px;
+        font-weight: bold;
+    }
+
+    .absol-2 span {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--primary-color);
+
+    }
+
+    .services {
+        padding: 50px;
+    }
+
+    .profess,
+    .para-3,
+    .black,
+    .power,
+    .logos,
+    .portfolio,
+    .portfolio-1,
+    .pricing,
+    .general,
+    .team,
+    .recent,
+    .contact,
+    .footer,
+    footer {
+        padding: 50px;
+    }
+
+    .questions {
+        padding: 50px 20px;
+    }
+
+    .questions p {
+        font-size: 16px;
+    }
+
+    .last-icons-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-flex {
+        padding: 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+
+    }
+
+    .team-1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 50px 0px;
+    }
+
+
+}
+
+/* For Device Supported Width: 768px - 991px */
+
+@media (min-width:768px) and (max-width:991px) {
+    header {
+        height: 100vh;
+
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .head {
+        padding: 80px 0px 80px;
+        align-items: center;
+        width: 70%;
+    }
+
+    nav ol {
+        display: none;
+    }
+
+    .about {
+        padding: 50px 50px;
+
+    }
+
+    .learn {
+        align-self: center;
+    }
+
+    .about p {
+        color: var(--para-color);
+    }
+
+    .bl-abt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px 0px 50px;
+        position: relative;
+
+    }
+
+    .bl-abt p {
+        color: var(--para-color);
+        font-weight: light;
+    }
+
+    .exp-img {
+        background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/about/about-portrait-2.webp) center;
+        background-size: cover;
+        width: auto;
+        height: 400px;
+        margin: 0px 50px 20px 50px;
+        border-radius: 20px;
+    }
+
+    .bl-abt h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .bl-abt2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        padding: 50px;
+    }
+
+    .abt-2p {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .abt-2p i {
+        color: var(--primary-color);
+        font-size: larger;
+        width: 55px;
+        background-color: #fcecd9;
+        border-radius: 100%;
+        padding: 15px;
+    }
+
+    .abt-2p p {
+        color: var(--para-color);
+    }
+
+    .near-i {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .abt-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .learn {
+        background-color: var(--primary-color);
+        width: fit-content;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+    }
+
+    .absol-1 {
+        position: absolute;
+        left: 55%;
+        top: 2%;
+        background-color: var(--primary-color);
+        padding: 10px 30px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .absol-1 span {
+        font-size: 30px;
+
+
+    }
+
+    .absol-2 {
+        position: absolute;
+        left: 15%;
+        bottom: 65%;
+        background-color: var(--secondary-color);
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        box-shadow: 0 0 10px gray;
+        border-radius: 10px;
+        gap: 4px;
+        font-weight: bold;
+    }
+
+    .absol-2 span {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--primary-color);
+
+    }
+
+    .services {
+        padding: 50px;
+    }
+
+    .profess,
+    .para-3,
+    .black,
+    .power,
+    .logos,
+    .portfolio,
+    .portfolio-1,
+    .pricing,
+    .general,
+    .team,
+    .recent,
+    .contact,
+    .footer,
+    footer {
+        padding: 50px;
+    }
+
+    .profess {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .black-btn {
+        flex-direction: column;
+    }
+
+    .power {
+        flex-direction: column;
+    }
+
+    .power-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .power-2 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .offers {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .standard,
+    .professional {
+        width: 50%;
+        align-self: center;
+    }
+
+    .absolute {
+        top: 35%;
+        left: 41%;
+    }
+
+    .questions {
+        padding: 50px 20px;
+    }
+
+    .questions p {
+        font-size: 16px;
+    }
+
+    .last-icons-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-flex {
+        padding: 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+
+    }
+
+    .team-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 50px 0px;
+    }
+
+    .team-11 {
+        width: 280px;
+        height: 400px;
+        align-self: center;
+    }
+
+    .contact-div {
+        padding: 20px 0px;
+        display: grid;
+        grid-template-areas: "item1 item1 item2 "
+            "item1  item1 item3 "
+            "item1  item1 item4 "
+            "item1  item1 item5 "
+            "item6  item6 item6 "
+            "item6  item6 item6 ";
+        row-gap: 20px;
+        column-gap: 30px;
+
+
+
+    }
+
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer-1 {
+        width: 100%;
+    }
+
+    .footer-2 {
+        width: 50%;
+        align-items: center;
+    }
+
+
+}
+
+/* For Device Supported Width: 576px - 767px */
+
+@media (min-width:576px) and (max-width:767px) {
+    header {
+        height: 100vh;
+        padding-bottom: 20px;
+
+    }
+
+    .head {
+        padding: 80px 0px 80px;
+        align-items: center;
+        width: 70%;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ol {
+        display: none;
+    }
+
+    .about {
+        padding: 50px 50px;
+
+    }
+
+    .learn {
+        align-self: center;
+    }
+
+    .about p {
+        color: var(--para-color);
+    }
+
+    .bl-abt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px 0px 50px;
+        position: relative;
+
+    }
+
+    .bl-abt p {
+        color: var(--para-color);
+        font-weight: light;
+    }
+
+    .exp-img {
+        background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/about/about-portrait-2.webp) center;
+        background-size: cover;
+        width: auto;
+        height: 400px;
+        margin: 0px 50px 20px 50px;
+        border-radius: 20px;
+    }
+
+    .bl-abt h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .bl-abt2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        padding: 50px;
+    }
+
+    .abt-2p {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .abt-2p i {
+        color: var(--primary-color);
+        font-size: larger;
+        width: 55px;
+        background-color: #fcecd9;
+        border-radius: 100%;
+        padding: 15px;
+    }
+
+    .abt-2p p {
+        color: var(--para-color);
+    }
+
+    .near-i {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .abt-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .learn {
+        background-color: var(--primary-color);
+        width: fit-content;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+    }
+
+    .absol-1 {
+        position: absolute;
+        left: 55%;
+        top: 2%;
+        background-color: var(--primary-color);
+        padding: 10px 30px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .absol-1 span {
+        font-size: 30px;
+
+
+    }
+
+    .absol-2 {
+        position: absolute;
+        left: 15%;
+        bottom: 65%;
+        background-color: var(--secondary-color);
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        box-shadow: 0 0 10px gray;
+        border-radius: 10px;
+        gap: 4px;
+        font-weight: bold;
+    }
+
+    .absol-2 span {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--primary-color);
+
+    }
+
+    .services {
+        padding: 50px;
+    }
+
+    .profess,
+    .para-3,
+    .black,
+    .power,
+    .logos,
+    .portfolio,
+    .portfolio-1,
+    .pricing,
+    .general,
+    .team,
+    .recent,
+    .contact,
+    .footer,
+    footer {
+        padding: 50px;
+    }
+
+    .para-3 {
+        flex-direction: column;
+    }
+
+    .para-31 {
+
+        width: 100%;
+    }
+
+    .profess {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .black-btn {
+        flex-direction: column;
+    }
+
+    .power {
+        flex-direction: column;
+    }
+
+    .power-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .power-2 {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .offers {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .standard,
+    .professional {
+        width: 400px;
+        align-self: center;
+    }
+
+    .absolute {
+        top: 35%;
+        left: 41%;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .questions {
+        padding: 50px 20px;
+    }
+
+    .questions p {
+        font-size: 16px;
+    }
+
+    .last-icons-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-flex {
+        padding: 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+
+    }
+
+    .portfolio-flex div {
+        width: 300px;
+    }
+
+    .team-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 50px 0px;
+    }
+
+    .team-11 {
+        width: 280px;
+        height: 400px;
+        align-self: center;
+    }
+
+    .contact-div {
+        padding: 20px 0px;
+        display: grid;
+        grid-template-areas: "item1 item1 item2 "
+            "item1  item1 item3 "
+            "item1  item1 item4 "
+            "item1  item1 item5 "
+            "item6  item6 item6 "
+            "item6  item6 item6 ";
+        row-gap: 20px;
+        column-gap: 30px;
+
+
+
+    }
+
+    .recent2div {
+        flex-direction: column;
+    }
+
+    .recent-1 {
+        width: 100%;
+    }
+
+    .recent-2 {
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .recent-22 {
+        width: 300px;
+    }
+
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer-1 {
+        width: 100%;
+    }
+
+    .footer-2 {
+        width: 60%;
+        align-items: center;
+    }
+
+}
+
+/* For Device Supported Width: 0px - 575px */
+
+@media (min-width:0px) and (max-width:575px) {
+    header {
+        height: 100vh;
+        padding: 80px 0px 20px;
+
+    }
+
+    .head {
+        padding: 80px 0px 80px;
+        width: 70%;
+    }
+
+    .head h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        width: 100vw;
+        top: 0;
+        justify-content: space-between;
+
+    }
+
+    nav ol {
+        display: none;
+    }
+
+    .about {
+        padding: 20px;
+
+    }
+
+    .learn {
+        align-self: center;
+    }
+
+    .about p {
+        color: var(--para-color);
+    }
+
+    .bl-abt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 0px 20px;
+        position: relative;
+
+    }
+
+    .bl-abt p {
+        color: var(--para-color);
+        font-weight: light;
+    }
+
+    .exp-img {
+        background: url(https://bootstrapmade.com/content/demo/Strive/assets/img/about/about-portrait-2.webp) center;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        margin: 0px 0px 20px 0px;
+        border-radius: 20px;
+    }
+
+    .bl-abt h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .bl-abt2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        padding: 0px;
+    }
+
+    .bl-abt2 h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .abt-2p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .abt-2p i {
+        color: var(--primary-color);
+        font-size: larger;
+        width: 55px;
+        background-color: #fcecd9;
+        border-radius: 100%;
+        padding: 15px;
+    }
+
+    .abt-2p p {
+        color: var(--para-color);
+    }
+
+    .near-i {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .abt-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .learn {
+        background-color: var(--primary-color);
+        width: fit-content;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+    }
+
+    .absol-1 {
+        position: absolute;
+        left: 50%;
+        top: 2%;
+        background-color: var(--primary-color);
+        padding: 10px 30px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        color: var(--secondary-color);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .absol-1 span {
+        font-size: 30px;
+
+
+    }
+
+    .absol-2 {
+        position: absolute;
+        left: 14%;
+        bottom: 75%;
+        background-color: var(--secondary-color);
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        box-shadow: 0 0 10px gray;
+        border-radius: 10px;
+        gap: 4px;
+        font-weight: bold;
+    }
+
+    .absol-2 span {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--primary-color);
+
+    }
+
+    .services {
+        padding: 20px;
+    }
+
+    .profess,
+    .para-3,
+    .black,
+    .power,
+    .logos,
+    .portfolio,
+    .portfolio-1,
+    .pricing,
+    .general,
+
+    .contact,
+    .footer,
+    footer {
+        padding: 20px;
+    }
+
+    .team {
+        padding: 20px;
+    }
+
+    .para-3 {
+        flex-direction: column;
+    }
+
+    .para-31 {
+
+        width: 100%;
+    }
+
+    .profess {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .black {
+        flex-direction: column;
+    }
+
+    .black-btn {
+        flex-direction: column;
+    }
+
+    .power {
+        flex-direction: column;
+    }
+
+    .power-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .power-2 {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .power-2 div {
+        width: 80%;
+    }
+
+    .offers {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .standard,
+    .professional {
+        width: 400px;
+        align-self: center;
+    }
+
+    .absolute {
+        top: 35%;
+        left: 41%;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        gap: 20px;
+        align-content: space-around;
+        width: auto;
+    }
+
+    .questions {
+        padding: 50px 20px;
+    }
+
+    .questions p {
+        font-size: 16px;
+    }
+
+    .last-icons-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-flex {
+        padding: 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-self: center;
+        gap: 20px;
+        width: 90%;
+
+    }
+
+    .portfolio-flex div {
+        width: 100%;
+    }
+
+    .portfolio-1 {
+        padding: 2%;
+    }
+
+    .portfolio-btn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 50px 0px;
+    }
+
+    .team-11 {
+        width: 90%;
+        height: auto;
+        align-self: center;
+    }
+
+    .contact-div {
+        padding: 20px 0px;
+        display: grid;
+        grid-template-areas: "item1 item1 item1 "
+            "item1  item1 item1 "
+            "item2  item2 item2 "
+            "item3  item3 item3 "
+            "item4  item4 item4 "
+            "item5  item5 item5 "
+            "item6  item6 item6 "
+            "item6  item6 item6 "
+            "item6  item6 item6 ";
+        row-gap: 20px;
+        column-gap: 30px;
+    }
+
+    .recent2div {
+        flex-direction: column;
+    }
+
+    .recent {
+        padding: 20px;
+
+    }
+
+    .recent-1 {
+        align-items: center;
+        width: 100%;
+    }
+
+    .recent-11 {
+        width: 95%;
+    }
+
+    .recent-2 {
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .recent-22 {
+        width: 300px;
+    }
+
+    .general-btns {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .recent-text h1 {
+        font-size: 25px;
+    }
+
+    .recent-center {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .recent-last {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer-1 {
+        width: 100%;
+    }
+
+    .footer-2 {
+        width: 60%;
+        align-items: center;
+    }
+
+}
