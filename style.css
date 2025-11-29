@@ -8,12 +8,23 @@
     font-weight: <weight>;
     font-style: normal;
 }
+html{
+    scroll-behavior:smooth;
+}
 
 :root {
     --primary-color: #ea7c00;
     --secondary-color: #ffffff;
     --para-color: #444444;
 
+}
+
+nav a:hover {
+ color: var(--primary-color);
+}
+li a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 p {
